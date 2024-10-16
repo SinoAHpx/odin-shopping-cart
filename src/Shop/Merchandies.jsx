@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-export default function Merchandies({ info, onClick }) {
+export default function Merchandies({ info, onClick, isAdded }) {
   return (
     <>
       <Card>
@@ -27,9 +27,15 @@ export default function Merchandies({ info, onClick }) {
                 {info.description}
               </Text>
               <Spacer />
-              <Button alignSelf="end" onClick={onClick} colorScheme="green">
-                Add to cart
-              </Button>
+              {isAdded ? (
+                <Button alignSelf="end" onClick={onClick} colorScheme="yellow">
+                  Remove from cart
+                </Button>
+              ) : (
+                <Button alignSelf="end" onClick={onClick} colorScheme="green">
+                  Add to cart
+                </Button>
+              )}
             </Flex>
           </Flex>
         </CardBody>
