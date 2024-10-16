@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardBody, Center, Flex, Heading, Link, Spacer } from "@chakra-ui/react";
+import { Button, Card, CardBody, Center, Flex, Heading } from "@chakra-ui/react";
 import "./App.css";
 
 function App() {
