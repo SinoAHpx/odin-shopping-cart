@@ -37,14 +37,14 @@ function App() {
   return (
     <Center width="100vw" height="100vh">
       <Flex direction="column">
-        <Card width="60vw" height="auto">
+        <Card width="40vw" height="auto">
           <CardBody display="flex" gap="10px" flexDirection="column">
             <Heading>Fired Programmer&#39;s Shop</Heading>
 
             {isLoaded ? (
-              <img src={imgUrl} style={{ height:'40vw', objectFit: "cover" }} />
+              <img src={imgUrl} style={{ height:'20vw', objectFit: "cover" }} />
             ) : (
-              <Skeleton height="40vw" />
+              <Skeleton height="20vw" />
             )}
             <Button onClick={() => {
               navigate('/shop')
