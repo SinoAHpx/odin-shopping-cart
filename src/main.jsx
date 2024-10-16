@@ -7,11 +7,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Shop from './Shop/Shop.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App/>
+  },
+  {
+    path: '/shop',
+    element: <Shop/>
   }
 ])
 
